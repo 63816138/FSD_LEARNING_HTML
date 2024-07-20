@@ -1,27 +1,11 @@
-p{
-    height: 20px;
-    width: 90%;
-    
-}
+/*Universal selector (*) using this element to apply the css for the all element and attribute in the selected HTML file*/
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*padding,margin is used to align the content we will see more details about in the box model section*/
+    padding: 0;
+    margin: 0;
 }
-iframe{
-    margin-left: 25%;
-}
-img,figcaption,figure{
-    
-    width: 150px;
-}
-.newscontent,img,figcaption,figure{
-    
-    display:inline-block;
-}
-table img{
-    width: 100px;
-    height: 75px;
-}
-table,tr,th,td{
-    border: solid;
-    border-color: black;
+/* External css apply the css by from the external file using the style sheets*/
+.signup_container{
+    align-content: center;
+    border-radius: 5px;
 }
