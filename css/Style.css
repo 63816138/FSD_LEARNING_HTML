@@ -8,4 +8,33 @@
 .signup_container{
     align-content: center;
     border-radius: 5px;
+    background-color: rgb(255, 252, 252);
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height: 350px;
+      
 }
+/*Selectors*/
+
+/*1).Tags and element Selector*/
+header{
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*2).Class selector*/
+ .signup_container{
+    /*Handling font using the below property for any element in the HTML*/
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+ }
+ /*3).ID selector*/
+ #MainSection{
+    background-color: grey;
+ }
+  /*4).Child selector*/
+header > h1{
+    color: white;
+}
+  
