@@ -3,38 +3,58 @@
     /*padding,margin is used to align the content we will see more details about in the box model section*/
     padding: 0;
     margin: 0;
-}
-/* External css apply the css by from the external file using the style sheets*/
-.signup_container{
-    align-content: center;
-    border-radius: 5px;
-    background-color: rgb(255, 252, 252);
-    color: rgb(0, 0, 0);
-    width: 300px;
-    height: 350px;
-      
-}
-/*Selectors*/
-
-/*1).Tags and element Selector*/
-header{
-    font-family: "Ga Maamli", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-/*2).Class selector*/
- .signup_container{
-    /*Handling font using the below property for any element in the HTML*/
     font-family: "Kalam", cursive;
     font-weight: 300;
     font-style: normal;
- }
- /*3).ID selector*/
- #MainSection{
-    background-color: grey;
- }
-  /*4).Child selector*/
-header > h1{
-    color: white;
 }
-  
+/* External css apply the css by from the external file using the style sheets*/
+.signup_container{
+    
+    border-radius: 5px;
+    width: 325px;
+    height: 350px;
+    /*Handling font using the below property for any element in the HTML*/
+    
+    position: relative;
+    top: 175px;
+    left: 800px;
+    background-color: rgba(0, 0, 0, 0.4);    
+    color: white;
+    
+ }
+ .signup_container h2{
+    text-align:center;
+    padding-top: 10px;
+    
+ }
+ .signup_container input,label {
+    margin-left: 10px;
+    margin-top: 60px;
+ }
+ .signup_container input{
+    width: 175px;  
+ }
+
+ .signup_container button{
+   margin-top: 60px;
+   padding: 10px 60px;
+   background-color: rgb(25, 125, 125);
+   border-style: none;
+   border-radius: 15px;
+   color: white;
+ }
+ .signup_container button:hover{
+    box-shadow: 1px 1px 6px 5px white;
+    padding:20px 80px  ;  
+ }
+
+
+body{
+    background-image: url(../Images/Green\ and\ White\ Photographic\ Blogger\ Bio-Link\ Website_20240723_171212_0000.png);
+    background-repeat: no-repeat;  
+    background-size: 100;
+    height: 10px;
+    
+}
+
+
