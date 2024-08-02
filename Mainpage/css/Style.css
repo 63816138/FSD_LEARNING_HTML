@@ -1,79 +1,165 @@
-p{
-    height: 20px;
-    width: 90%;
-    
-    
-}
 *{
     font-family: "Kalam", cursive;
     font-style: normal;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 body{
-    background-color: gray;
-}
-header{
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin-bottom: 30px;
+    background-color: rgb(255, 251, 251);
+    width: 100vw;
+    height: 100vh;
 
-    
 }
-iframe{
-    margin-left: 25%;
+/* Box model
+ ---------------------------------------------------------------------------------------*/
+ .boxmodel{
+    display: flex;
+    flex-direction: row;
+ }
+/* Header section 
+------------------------------------------------------------------------------------------*/
+ header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1, 6, 53);
+    color: white;
+    height: 10vh;
+    width: 100vw;
+ }
+ header ul,li{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+ }
+ header a{
+    text-decoration: none;
+    color: white;
+ }
+ header li:hover{
+    background-color: white;
+    cursor: pointer;
+ }
+ header a:hover{
+    color: rgb(1,6,53);
+    text-shadow: 2px 2px 10px  rgba(1, 6, 53, 0.676);
+ }
+ /* 
+ Breaking News
+ ----------------------------------------------------------------------------------------------------------------------- */
+ #breakingnews{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 25vw;
+    align-items:center ;
+    margin: 0 10px;
+    border-right: 1px solid rgb(35, 32, 32);
+    float: left;
+    overflow:auto;
+    height: 140vh;
+    color: rgb(24, 23, 23);
+ }
+ .br-news a{
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+ }
+ .br-news a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
+/* Live News
+--------------------------------------------------------------------------------------------------------------------------- */
+#live-news{
+    width: 45vw;
+    height: max-content;
 }
-img,figcaption,figure{
-    
-    width: 150px;
+#live-news iframe{
+    padding: 20px;
+    width: 40vw;
+    height:60vh;
 }
-.newscontent,img,figcaption,figure{
-    
-    display:inline-block;
+/* Educational Content
+--------------------------------------------------------------------------------------------------------------------------- */
+
+#educational-content{
+    margin: 0;
+    padding: 0;
+    width: 25vw;
+    height:max-content;
+    border: 1px solid rgb(5, 1, 47);
 }
-table img{
+#educational-content h3,h4,figure,figcaption,img{
+    padding-top: 20px;
+}
+#educational-content img{
     width: 100px;
     height: 75px;
 }
-table,tr,th,td{
-    border: solid;
-    border-color: black;
+
+#educational-content h3{
+    text-decoration: dashed;
 }
-.boxmodel{
-    display: inline-block;
-    background-color: black;
+
+/* Today Headlines
+ ------------------------------------------------------------------------------------------------------------------------------*/
+#Today-headlines{
+    position: relative;
+    left: 28vw;
+    top:-60vh;
+    border-top: 2px solid black;
+    width: max-content;
 }
-#breakingnews {
-    margin-left: 20px;
-    width: 300px;
+.news{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;   
+}
+.newscontent{
+    width: 200px;
     height: max-content;
-    border: 3px solid black;
-    display: inline-block;
-    background-color: rgb(255, 250, 250,0.8);
-    color: rgb(0, 0, 0);
     
 }
-#breakingnews a{
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
+/* Footer 
+------------------------------------------------------------------------------------------------------------------------------------- */
+footer{
+    background-color: rgb(5, 1, 47);
+    color: white;
+    justify-content: space-between;
+    position:static;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-page{
+    background:url(../mainimg/about.jpeg) no-repeat center/cover;
+    height: 100vh;
+    width: 100vw;
     
 }
-#breakingnews table,th,tr{
-    border: solid;
-    border-color: black;
-}
-#live-news{
-    border: 3px solid black;
-    position: relative;
-    top: -37em;
-    left: 70px;
-    background-color: rgb(255, 246, 246,0.7);
+.about-content{
     width: 600px;
-    height: 400px;
-}
-#live-news iframe{
-    margin-top: 20px;
-    position: relative;
-    left: -125px;
+    height:500px;
+    background-color: rgba(255, 255, 255, 0.672);
+    margin-left: 5vw;
+    margin-top: 10vh;
+    font-size: 15px;
+    border-radius: 20px;
 }
