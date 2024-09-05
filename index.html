@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Today News-Signup</title>
 </head>
 <!--This is HTML code for the simple login page using only the Basic concept of HTML this is a static webpage-->
-<body id="MainSection">
-    <section>
-        <hr>
-    
-    <!--Center element used to align all the content within the g will be align center without using the any CSS-->
-    
-   
-        
-        <!--Form element is used to mention this is a form -->
-        <div class="signup_container">
-            <form action="Mainpage/Mainpage.html">
-                <h2>Login</h2>
+<body id="MainSection" class=" flex items-center justify-center" style="font: size 16px; background: url(../Images/Green\ and\ White\ Photographic\ Blogger\ Bio-Link\ Website_20240723_171212_0000.png) no-repeat top;
+width: 100v;
+height: 100vh;">
+    <section class=" text-white flex items-center justify-end w-full mr-30 ">
+        <section class="h-96 ">
+            <form action="Mainpage/Mainpage.html" class="  h-96 flex flex-col items-center justify-evenly bg-white bg-opacity-20 rounded">
+                <h2 class="text-2xl ">Login</h2>
                 <label for="username">
                     Name :
                     <input type="text" required>
@@ -29,14 +25,13 @@
                     <input type="password" required>
                 </label>
                 <center>
-                    <button type="submit" >Login</button>
+                    <button type="submit" class="bg-green-500 px-5 py-2 hover:bg-green-600 rounded" >Login</button>
                 </center>
                 
             </form>
-        </div>
-        
-    
-    </section>   
+        </section>   
 
+    </section>
+        
 </body>
 </html>

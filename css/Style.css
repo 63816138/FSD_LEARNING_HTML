@@ -1,60 +1,14 @@
-/*Universal selector (*) using this element to apply the css for the all element and attribute in the selected HTML file*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
-    /*padding,margin is used to align the content we will see more details about in the box model section*/
-    padding: 0;
-    margin: 0;
-    font-family: "Kalam", cursive;
-    font-weight: 300;
-    font-style: normal;
+  color: white;
+  font-size: 16px;
 }
-/* External css apply the css by from the external file using the style sheets*/
-.signup_container{
-    
-    border-radius: 5px;
-    width: 325px;
-    height: 350px;
-    /*Handling font using the below property for any element in the HTML*/
-    position: relative;
-    top: 175px;
-    left: 50em;
-    background-color: rgba(0, 0, 0, 0.4);    
-    color: white;
-    
- }
- .signup_container h2{
-    text-align:center;
-    padding-top: 10px;
-    
- }
- .signup_container input,label {
-    margin-left: 10px;
-    margin-top: 60px;
- }
- .signup_container input{
-    width: 175px;  
- }
-
- .signup_container button{
-   margin-top: 60px;
-   padding: 10px 60px;
-   background-color: rgb(25, 125, 125);
-   border-style: none;
-   border-radius: 15px;
-   color: white;
- }
- .signup_container button:hover{
-    box-shadow: 1px 1px 6px 5px white;
-    padding:20px 80px  ;  
- }
- 
-
-
-body{
-    background-image: url(../Images/Green\ and\ White\ Photographic\ Blogger\ Bio-Link\ Website_20240723_171212_0000.png);
-    background-repeat: no-repeat;  
-    background-size: cover;
-    height: 10px;
-    
+a{
+  color: black;
 }
-
-
+li{
+  padding: 5px;
+}
